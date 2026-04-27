@@ -38,7 +38,13 @@ export async function POST(req: NextRequest) {
     userId = new mongoose.Types.ObjectId(auth.userId);
 
     body = await req.json();
-    const { idempotencyKey, amount, category, description, date } = body as Record<string, unknown>;
+    const { idempotencyKey, amount, category, description, date } = body as {
+  idempotencyKey: string;
+  amount: string;
+  category: string;
+  description: string;
+  date: string;
+};
 
     // --- Validation ---
     if (!idempotencyKey || typeof idempotencyKey !== "string") {
