@@ -1,4 +1,4 @@
-# Kharcha Manager  — Personal Expense Tracker
+# Kharcha   — Personal Expense Tracker
 
 A clean, production‑style expense tracker built with **Next.js 14 (App Router)**, **MongoDB**, and **Tailwind CSS**.
 
