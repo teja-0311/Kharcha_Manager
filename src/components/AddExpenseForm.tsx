@@ -15,7 +15,7 @@ export default function AddExpenseForm({ onSuccess }: AddExpenseFormProps) {
   const today = new Date().toISOString().split("T")[0];
 
   const [amount, setAmount] = useState("");
-  const [category, setCategory] = useState(CATEGORIES[0]);
+  const [category, setCategory] = useState<string>(CATEGORIES[0]);
   const [description, setDescription] = useState("");
   const [date, setDate] = useState(today);
 
