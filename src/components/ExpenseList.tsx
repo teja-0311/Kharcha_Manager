@@ -69,7 +69,7 @@ export default function ExpenseList({ refreshTrigger }: ExpenseListProps) {
   const [sort, setSort] = useState<"date_desc" | "date_asc">("date_desc");
   const [editingExpense, setEditingExpense] = useState<ExpenseDTO | null>(null);
   const [editAmount, setEditAmount] = useState("");
-  const [editCategory, setEditCategory] = useState(CATEGORIES[0]);
+  const [editCategory, setEditCategory] = useState<string>(CATEGORIES[0]);
   const [editDescription, setEditDescription] = useState("");
   const [editDate, setEditDate] = useState("");
   const [editError, setEditError] = useState<string | null>(null);
